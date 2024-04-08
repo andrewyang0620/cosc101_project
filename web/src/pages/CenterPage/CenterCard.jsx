@@ -9,10 +9,10 @@ const formatDate = (dateString) => {
 
 const CenterCard = ({ review }) => {
   return (
-    <Card sx={{ display: 'flex', marginBottom: '2rem', alignItems: 'center', width: '100%' }}>
+    <Card sx={{ display: 'flex', marginBottom: '2rem', alignItems: 'center', width: '120%' }}>
       <CardMedia
         component="img"
-        sx={{ width: 151, height: 220 }}
+        sx={{ width: 151, height: 220, marginLeft: '2.5%', borderRadius: '5%' }}
         image={review.imageUrl}
         alt={`Image for ${review.title}`}
       />
@@ -21,8 +21,10 @@ const CenterCard = ({ review }) => {
           <Typography component="span" variant="body2" sx={{ fontSize: '0.8rem', color: 'text.secondary' }}>
             Highlight from
           </Typography>
-          <Link component={RouterLink} to={`/events/${review.id}`} sx={{ textDecoration: 'none' }}>
-            <Typography component="div" variant="h6" sx={{ mt: '0.3rem', color: 'black', '&:hover': { textDecoration: 'underline' } }}>
+          <Link component={RouterLink} to={`/learning-center/events/${review.id}`} sx={{ textDecoration: 'none' }}>
+            <Typography component="div" variant="h6" sx={{
+              mt: '0.3rem', color: 'black', '&:hover': { textDecoration: 'underline' }
+            }}>
               {review.title}
             </Typography>
           </Link>
@@ -39,7 +41,7 @@ const CenterCard = ({ review }) => {
         <Box sx={{ display: 'flex', justifyContent: 'flex-end', mt: '1rem' }}>
           <Button
             component={RouterLink}
-            to={`/events/${review.id}`}
+            to={`/learning-center/events/${review.id}`}
             variant="outlined"
             sx={{ textTransform: 'none' }}
           >
