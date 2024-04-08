@@ -6,6 +6,7 @@ import { useParams } from 'react-router-dom';
 
 const DetailPages = () => {
     let { reviewId } = useParams();
+    const isEvent1 = reviewId === 'event1';
     const isEvent2 = reviewId === 'event2';
     const isEvent3 = reviewId === 'event3';
     return (
@@ -129,7 +130,67 @@ const DetailPages = () => {
 
                         <Box sx={{ mt: 4 }}>
                             <Typography variant="body2">
-                                For more detailed guides, visit <Link href="https://yourwebsite.com/email-made-easy-mastering-your-inbox" target="_blank" rel="noopener">See the Original Website Here</Link>
+                                For more detailed guides, visit <Link href="https://support.microsoft.com/en-us/outlook" target="_blank" rel="noopener">See the Original Website Here</Link>
+                            </Typography>
+                        </Box>
+                    </>) : (
+                    <Typography variant="h4" gutterBottom>
+                        {/* Content not found for this ID. */}
+                    </Typography>
+                )}
+                {isEvent1 ? (
+                    <>
+                        <Typography variant="h3" gutterBottom>
+                            Navigating Social Media: A Beginner Guide to Connecting Online
+                        </Typography>
+
+                        <Typography variant="h5" gutterBottom sx={{ marginTop: '2rem' }}>
+                            Get started with social media and connect with friends and family online:
+                        </Typography>
+                        <List>
+                            <ListItem>
+                                <ListItemText primary="Choosing the Right Social Media Platforms:" secondary="Overview of popular social media platforms and how to choose the right ones for you." />
+                            </ListItem>
+                        </List>
+                        <List>
+                            <ListItem>
+                                <ListItemText primary="Creating Your Social Media Accounts:" secondary="Step-by-step guide to setting up profiles on various social media platforms." />
+                            </ListItem>
+                        </List>
+                        <List>
+                            <ListItem>
+                                <ListItemText primary="Understanding Social Media Etiquette:" secondary="Tips on interacting respectfully and safely on social media." />
+                            </ListItem>
+                        </List>
+                        <List>
+                            <ListItem>
+                                <ListItemText primary="Managing Privacy Settings:" secondary="How to adjust privacy settings to control who sees your posts and information." />
+                            </ListItem>
+                        </List>
+                        <List>
+                            <ListItem>
+                                <ListItemText primary="Finding and Connecting with Friends and Family:" secondary="Methods for finding and adding friends, family, and other contacts on social media." />
+                            </ListItem>
+                        </List>
+                        <List>
+                            <ListItem>
+                                <ListItemText primary="Posting and Sharing Content:" secondary="Guidelines for creating and sharing posts, photos, and videos on social media." />
+                            </ListItem>
+                        </List>
+                        <List>
+                            <ListItem>
+                                <ListItemText primary="Joining Groups and Communities:" secondary="How to join and participate in groups, communities, and discussions on social media." />
+                            </ListItem>
+                        </List>
+                        <List>
+                            <ListItem>
+                                <ListItemText primary="Staying Safe and Avoiding Scams:" secondary="Tips for recognizing and avoiding scams, fake news, and other risks on social media." />
+                            </ListItem>
+                        </List>
+
+                        <Box sx={{ mt: 4 }}>
+                            <Typography variant="body2">
+                                For more detailed guides, visit <Link href="https://buffer.com/resources/" target="_blank" rel="noopener">See the Original Website Here</Link>
                             </Typography>
                         </Box>
                     </>) : (
@@ -142,4 +203,4 @@ const DetailPages = () => {
     );
 };
 
-export {DetailPages };
+export { DetailPages };
