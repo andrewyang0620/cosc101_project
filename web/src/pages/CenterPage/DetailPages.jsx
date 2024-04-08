@@ -7,6 +7,7 @@ import { useParams } from 'react-router-dom';
 const DetailPages = () => {
     let { reviewId } = useParams();
     const isEvent2 = reviewId === 'event2';
+    const isEvent3 = reviewId === 'event3';
     return (
         <>
             <Navbar />
@@ -83,7 +84,57 @@ const DetailPages = () => {
                         </Box>
                     </>) : (
                     <Typography variant="h4" gutterBottom>
-                        Content not found for this ID.
+                        {/* Content not found for this ID. */}
+                    </Typography>
+                )}
+                {isEvent3 ? (
+                    <>
+                        <Typography variant="h3" gutterBottom>
+                            Email Made Easy: Mastering Your Inbox
+                        </Typography>
+
+                        <Typography variant="h5" gutterBottom sx={{ marginTop: '2rem' }}>
+                            Learn to manage your email like a pro:
+                        </Typography>
+                        <List>
+                            <ListItem>
+                                <ListItemText primary="Understanding Email Basics:" secondary="What is Email? Why Use Email? Common Email Terms Explained." />
+                            </ListItem>
+                        </List>
+                        <List>
+                            <ListItem>
+                                <ListItemText primary="Setting Up Your Email Account:" secondary="Choosing an Email Provider, Creating Your Email Account, Setting a Strong Password." />
+                            </ListItem>
+                        </List>
+                        <List>
+                            <ListItem>
+                                <ListItemText primary="Navigating Your Inbox:" secondary="Understanding Your Inbox Layout, Reading and Opening Emails, Sorting and Organizing Emails." />
+                            </ListItem>
+                        </List>
+                        <List>
+                            <ListItem>
+                                <ListItemText primary="Composing and Sending Emails:" secondary="Starting a New Email, Attaching Files and Photos, Sending and Saving Drafts." />
+                            </ListItem>
+                        </List>
+                        <List>
+                            <ListItem>
+                                <ListItemText primary="Managing Your Email Contacts:" secondary="Adding and Editing Contacts, Grouping Contacts, Sending Emails to Multiple Contacts." />
+                            </ListItem>
+                        </List>
+                        <List>
+                            <ListItem>
+                                <ListItemText primary="Staying Safe and Secure:" secondary="Recognizing Spam and Phishing Emails, Protecting Your Email Account, Privacy and Confidentiality." />
+                            </ListItem>
+                        </List>
+
+                        <Box sx={{ mt: 4 }}>
+                            <Typography variant="body2">
+                                For more detailed guides, visit <Link href="https://yourwebsite.com/email-made-easy-mastering-your-inbox" target="_blank" rel="noopener">See the Original Website Here</Link>
+                            </Typography>
+                        </Box>
+                    </>) : (
+                    <Typography variant="h4" gutterBottom>
+                        {/* Content not found for this ID. */}
                     </Typography>
                 )}
             </Container>
@@ -91,4 +142,4 @@ const DetailPages = () => {
     );
 };
 
-export default DetailPages;
+export {DetailPages };

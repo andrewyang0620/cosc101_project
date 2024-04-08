@@ -1,13 +1,13 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/HomePage/Home';
 import Center from './pages/CenterPage/Center';
 import News from './pages/NewsPage/NewsPage';
-import DetailPages from './pages/CenterPage/DetailPages';
+import { DetailPages } from './pages/CenterPage/DetailPages';
 
 function App() {
   return (
-    <BrowserRouter>
+    <Router>
       <div className="App">
         <Routes>
           <Route path="/" element={<Home />} />
@@ -17,9 +17,8 @@ function App() {
           <Route path="/blog-news" element={<News />} />
         </Routes>
       </div>
-    </BrowserRouter>
+    </Router>
   );
 }
 
 export default App;
-

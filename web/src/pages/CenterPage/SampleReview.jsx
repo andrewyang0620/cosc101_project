@@ -14,7 +14,7 @@ const reviews = [
     poster: 'James May',
   },
   {
-    id: 'review3',
+    id: 'event3',
     title: 'Email Made Easy: Mastering Your Inbox',
     excerpt: 'Learn to manage your email like a pro with this comprehensive guide.',
     imageUrl: '3.jpg',
