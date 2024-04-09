@@ -48,7 +48,7 @@ Type the command below:
 npm install  
 ```
 This command should have all your React setup.  
-Once the installation is complete, then type the command below after ```./cosc101_project.git/web/```:  
+Once the installation is complete, then type the command below:  
 ```
 npm start  
 ```
