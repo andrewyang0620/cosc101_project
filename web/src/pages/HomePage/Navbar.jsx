@@ -19,7 +19,7 @@ const Navbar = () => {
       <Toolbar>
         <img src={websiteIcon} alt="Website Logo" style={{ marginRight: '1%', height: '40px' }} />
         <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-          Tech Education for Elder
+          Tech Education for The Elders
         </Typography>
         <NavBarButton onClick={() => navigate('/')}>Home</NavBarButton>
         <NavBarButton onClick={() => navigate('/learning-center')}>Learning Center</NavBarButton>
