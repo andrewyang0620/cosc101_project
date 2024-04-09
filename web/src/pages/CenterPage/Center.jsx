@@ -13,7 +13,7 @@ const Center = () => {
         <Grid container spacing={4}>
           <Grid item xs={12} md={8}>
             <Typography variant="h3" gutterBottom sx={{ marginBottom: '1.5rem' }}>
-              Learner Center
+              Learning Center
             </Typography>
             <Typography variant="body1" gutterBottom sx={{ marginBottom: '2rem' }}>
             Master digital skills at your own pace. Explore a wide range of tutorials and resources designed to make technology simple and enjoyable for seniors
