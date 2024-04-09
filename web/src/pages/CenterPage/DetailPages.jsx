@@ -130,7 +130,7 @@ const DetailPages = () => {
 
                         <Box sx={{ mt: 4 }}>
                             <Typography variant="body2">
-                                For more detailed guides, visit <Link href="https://support.microsoft.com/en-us/outlook" target="_blank" rel="noopener">See the Original Website Here</Link>
+                                For more detailed guides, visit <Link href="https://medium.com/@angelopollice/email-how-to-manage-your-inbox-daf8a9413140" target="_blank" rel="noopener">See the Original Website Here</Link>
                             </Typography>
                         </Box>
                     </>) : (
@@ -190,7 +190,7 @@ const DetailPages = () => {
 
                         <Box sx={{ mt: 4 }}>
                             <Typography variant="body2">
-                                For more detailed guides, visit <Link href="https://buffer.com/resources/" target="_blank" rel="noopener">See the Original Website Here</Link>
+                                For more detailed guides, visit <Link href="https://www.thebookwhispererscommunity.com/home/community/news/navigating-social-media-a-beginner-s-guide-for-writers" target="_blank" rel="noopener">See the Original Website Here</Link>
                             </Typography>
                         </Box>
                     </>) : (
